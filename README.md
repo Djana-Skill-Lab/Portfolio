@@ -30,7 +30,7 @@ Je suis **Michaïlou Djana Traoré**, fondateur de **Djana Skills Lab (DSL)**.
 ---
 
 📬 **Contact**
-- 🌐 [LinkedIn](https://www.linkedin.com/in/djanatraore)  
+- 🌐 www.linkedin.com/in/djanatraore 
 - 📧 traoremichailou@gmail.com *(email professionnel à venir)*  
 - 🏢 Djana Skills Lab (DSL)  
 
@@ -66,7 +66,7 @@ I am **Michaïlou Djana Traoré**, founder of **Djana Skills Lab (DSL)**.
 ---
 
 📬 **Contact**
-- 🌐 [LinkedIn](https://www.linkedin.com/in/djanatraore)  
+- 🌐 www.linkedin.com/in/djanatraore
 - 📧 traoremichailou@gmail.com *(professional email coming soon)*  
 - 🏢 Djana Skills Lab (DSL)  
 
