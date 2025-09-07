@@ -1,6 +1,3 @@
-![DSL Banner](https://raw.githubusercontent.com/djana-traore/djana-traore/main/banner.png)
-
-
 # 👋 Bienvenue sur mon Portfolio / Welcome to my Portfolio
 
 ---
