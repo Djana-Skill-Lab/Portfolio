@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Freelance - Analyse Foot Power BI</title>
+    <title>Djana-Skill-Lab - Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         * {
@@ -33,6 +33,23 @@
             color: #58a6ff;
             margin-bottom: 15px;
             font-size: 2.5em;
+        }
+        
+        .profile {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+        
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 3px solid #58a6ff;
+            object-fit: cover;
         }
         
         .project {
@@ -66,6 +83,16 @@
         
         .btn:hover {
             background-color: #2ea043;
+        }
+        
+        .btn-outline {
+            background-color: transparent;
+            border: 1px solid #58a6ff;
+            color: #58a6ff;
+        }
+        
+        .btn-outline:hover {
+            background-color: rgba(88, 166, 255, 0.1);
         }
         
         .instructions {
@@ -113,12 +140,49 @@
             align-items: center;
             gap: 10px;
         }
+        
+        .view-instructions {
+            background-color: #1e3b6c;
+            border-left: 4px solid #388bfd;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        
+        .language-switcher {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .language-btn {
+            background: transparent;
+            border: 1px solid #30363d;
+            color: #c9d1d9;
+            padding: 8px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        .language-btn.active {
+            background-color: #58a6ff;
+            color: white;
+        }
+        
+        .content-fr { display: block; }
+        .content-en { display: none; }
     </style>
 </head>
 <body>
     <header>
-        <h1><i class="fab fa-github"></i> Mon Portfolio Freelance</h1>
+        <h1><i class="fab fa-github"></i> Djana-Skill-Lab Portfolio</h1>
         <p>Bienvenue sur mon portfolio GitHub / Welcome to my Portfolio</p>
+        
+        <div class="language-switcher">
+            <button class="language-btn active" onclick="showLanguage('fr')">Français</button>
+            <button class="language-btn" onclick="showLanguage('en')">English</button>
+        </div>
     </header>
     
     <main>
@@ -127,58 +191,112 @@
             <p>Le nom du fichier Power BI a été correctement configuré : <strong>Analyse Foot.pbix</strong></p>
         </div>
         
+        <div class="view-instructions">
+            <h3><i class="fas fa-eye"></i> Comment voir votre site</h3>
+            <p>Après activation de GitHub Pages, votre site sera accessible à :</p>
+            <p><code>https://djana-skill-lab.github.io/Portfolio/</code></p>
+        </div>
+        
         <div class="project">
             <h2><i class="fas fa-chart-bar"></i> Projet Power BI - Analyse Foot</h2>
-            <p>Ce projet présente une analyse complète de données footballistiques avec visualisations interactives, statistiques des joueurs et performances d'équipes.</p>
-            <p>Cliquez sur le bouton ci-dessous pour télécharger le fichier .pbix :</p>
+            <div class="content-fr">
+                <p>Ce projet présente une analyse complète de données footballistiques avec visualisations interactives, statistiques des joueurs et performances d'équipes.</p>
+                <p>Cliquez sur le bouton ci-dessous pour télécharger le fichier .pbix :</p>
+            </div>
+            <div class="content-en">
+                <p>This project presents a comprehensive analysis of football data with interactive visualizations, player statistics and team performances.</p>
+                <p>Click the button below to download the .pbix file:</p>
+            </div>
             
-            <!-- Lien déjà configuré avec le bon nom de fichier -->
             <a href="Analyse Foot.pbix" class="btn">
-                <i class="fas fa-download"></i> Télécharger le projet Power BI
+                <i class="fas fa-download"></i> 
+                <span class="content-fr">Télécharger le projet Power BI</span>
+                <span class="content-en">Download Power BI Project</span>
             </a>
         </div>
         
         <div class="project">
-            <h2><i class="fas fa-futbol"></i> Contenu de l'analyse</h2>
-            <p>Ce dashboard Power BI inclut :</p>
-            <ul>
-                <li>Statistiques détaillées des joueurs</li>
-                <li>Performances des équipes</li>
-                <li>Visualisations des matchs et résultats</li>
-                <li>Analyse comparative entre ligues</li>
-                <li>Indicateurs de performance clés</li>
-            </ul>
-        </div>
-        
-        <div class="project">
-            <h2><i class="fas fa-info-circle"></i> Comment utiliser</h2>
-            <p>Pour visualiser ce projet Power BI :</p>
-            <ol>
-                <li>Téléchargez le fichier .pbix en cliquant sur le bouton ci-dessus</li>
-                <li>Ouvrez le fichier avec Microsoft Power BI Desktop</li>
-                <li>Explorez les différentes visualisations et filtres</li>
-                <li>Interagissez avec les graphiques pour découvrir les insights</li>
-            </ol>
+            <h2><i class="fas fa-futbol"></i> 
+                <span class="content-fr">Contenu de l'analyse</span>
+                <span class="content-en">Analysis Content</span>
+            </h2>
+            <div class="content-fr">
+                <p>Ce dashboard Power BI inclut :</p>
+                <ul>
+                    <li>Statistiques détaillées des joueurs</li>
+                    <li>Performances des équipes</li>
+                    <li>Visualisations des matchs et résultats</li>
+                    <li>Analyse comparative entre ligues</li>
+                    <li>Indicateurs de performance clés</li>
+                </ul>
+            </div>
+            <div class="content-en">
+                <p>This Power BI dashboard includes:</p>
+                <ul>
+                    <li>Detailed player statistics</li>
+                    <li>Team performances</li>
+                    <li>Match and results visualizations</li>
+                    <li>Comparative analysis between leagues</li>
+                    <li>Key performance indicators</li>
+                </ul>
+            </div>
         </div>
         
         <div class="instructions">
-            <h3><i class="fas fa-lightbulb"></i> Configuration GitHub Pages</h3>
-            <p>Pour rendre votre portfolio accessible en ligne :</p>
-            <ol>
-                <li>Allez dans l'onglet <strong>"Settings"</strong> de votre repository</li>
-                <li>Dans le menu de gauche, cliquez sur <strong>"Pages"</strong></li>
-                <li>Sous <strong>"Source"</strong>, sélectionnez la branche <strong>"main"</strong></li>
-                <li>Cliquez sur <strong>"Save"</strong></li>
-                <li>Votre site sera accessible à : <code>https://votrenomutilisateur.github.io/freelance/</code></li>
-            </ol>
+            <h3><i class="fas fa-cog"></i> 
+                <span class="content-fr">Activation de GitHub Pages</span>
+                <span class="content-en">GitHub Pages Activation</span>
+            </h3>
+            <div class="content-fr">
+                <p>Pour rendre votre portfolio accessible en ligne :</p>
+                <ol>
+                    <li>Allez dans l'onglet <strong>"Settings"</strong> de votre repository</li>
+                    <li>Dans le menu de gauche, cliquez sur <strong>"Pages"</strong></li>
+                    <li>Sous <strong>"Source"</strong>, sélectionnez la branche <strong>"main"</strong></li>
+                    <li>Cliquez sur <strong>"Save"</strong></li>
+                    <li>Attendez quelques minutes que le site se déploie</li>
+                    <li>Visitez <code>https://djana-skill-lab.github.io/Portfolio/</code></li>
+                </ol>
+            </div>
+            <div class="content-en">
+                <p>To make your portfolio accessible online:</p>
+                <ol>
+                    <li>Go to the <strong>"Settings"</strong> tab of your repository</li>
+                    <li>In the left menu, click on <strong>"Pages"</strong></li>
+                    <li>Under <strong>"Source"</strong>, select the <strong>"main"</strong> branch</li>
+                    <li>Click on <strong>"Save"</strong></li>
+                    <li>Wait a few minutes for the site to deploy</li>
+                    <li>Visit <code>https://djana-skill-lab.github.io/Portfolio/</code></li>
+                </ol>
+            </div>
         </div>
     </main>
     
     <footer>
-        <p>© 2023 - Portfolio Freelance - Analyse Football</p>
-        <a href="https://github.com/votre-username/freelance" class="github-link">
-            <i class="fab fa-github"></i> Voir le repository sur GitHub
+        <p>© 2023 - Djana-Skill-Lab Portfolio</p>
+        <a href="https://github.com/Djana-Skill-Lab/Portfolio" class="github-link">
+            <i class="fab fa-github"></i> 
+            <span class="content-fr">Voir le repository sur GitHub</span>
+            <span class="content-en">View repository on GitHub</span>
         </a>
     </footer>
+
+    <script>
+        function showLanguage(lang) {
+            // Mettre à jour les boutons
+            document.querySelectorAll('.language-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            document.querySelector(`.language-btn[onclick="showLanguage('${lang}')"]`).classList.add('active');
+            
+            // Afficher/masquer le contenu
+            document.querySelectorAll('.content-fr, .content-en').forEach(el => {
+                el.style.display = 'none';
+            });
+            document.querySelectorAll(`.content-${lang}`).forEach(el => {
+                el.style.display = 'block';
+            });
+        }
+    </script>
 </body>
 </html>
