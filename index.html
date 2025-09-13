@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Freelance - Power BI</title>
+    <title>Portfolio Freelance - Analyse Foot Power BI</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         * {
@@ -103,12 +103,15 @@
             margin-top: 15px;
         }
 
-        .important-note {
-            background-color: #3a2110;
-            border-left: 4px solid #ff7b72;
+        .success-message {
+            background-color: #1c5329;
+            border-left: 4px solid #3fb950;
             padding: 15px;
             margin: 20px 0;
             border-radius: 4px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
         }
     </style>
 </head>
@@ -119,19 +122,32 @@
     </header>
     
     <main>
-        <div class="important-note">
-            <p><i class="fas fa-exclamation-circle"></i> <strong>Important :</strong> Remplacez "NOM-DU-FICHIER.pbix" ci-dessous par le nom exact de votre fichier Power BI</p>
+        <div class="success-message">
+            <i class="fas fa-check-circle"></i>
+            <p>Le nom du fichier Power BI a été correctement configuré : <strong>Analyse Foot.pbix</strong></p>
         </div>
         
         <div class="project">
-            <h2><i class="fas fa-chart-bar"></i> Projet Power BI - Analyse Commerciale</h2>
-            <p>Ce projet présente un tableau de bord complet d'analyse commerciale avec visualisations interactives, segmentation des données et indicateurs de performance clés.</p>
+            <h2><i class="fas fa-chart-bar"></i> Projet Power BI - Analyse Foot</h2>
+            <p>Ce projet présente une analyse complète de données footballistiques avec visualisations interactives, statistiques des joueurs et performances d'équipes.</p>
             <p>Cliquez sur le bouton ci-dessous pour télécharger le fichier .pbix :</p>
             
-            <!-- REMPLACEZ "NOM-DU-FICHIER.pbix" PAR LE NOM EXACT DE VOTRE FICHIER -->
-            <a href="NOM-DU-FICHIER.pbix" class="btn">
+            <!-- Lien déjà configuré avec le bon nom de fichier -->
+            <a href="Analyse Foot.pbix" class="btn">
                 <i class="fas fa-download"></i> Télécharger le projet Power BI
             </a>
+        </div>
+        
+        <div class="project">
+            <h2><i class="fas fa-futbol"></i> Contenu de l'analyse</h2>
+            <p>Ce dashboard Power BI inclut :</p>
+            <ul>
+                <li>Statistiques détaillées des joueurs</li>
+                <li>Performances des équipes</li>
+                <li>Visualisations des matchs et résultats</li>
+                <li>Analyse comparative entre ligues</li>
+                <li>Indicateurs de performance clés</li>
+            </ul>
         </div>
         
         <div class="project">
@@ -141,36 +157,28 @@
                 <li>Téléchargez le fichier .pbix en cliquant sur le bouton ci-dessus</li>
                 <li>Ouvrez le fichier avec Microsoft Power BI Desktop</li>
                 <li>Explorez les différentes visualisations et filtres</li>
+                <li>Interagissez avec les graphiques pour découvrir les insights</li>
             </ol>
         </div>
         
         <div class="instructions">
-            <h3><i class="fas fa-exclamation-circle"></i> Modification du nom de fichier</h3>
-            <p>Après avoir téléversé votre fichier Power BI, vous devez modifier le code :</p>
+            <h3><i class="fas fa-lightbulb"></i> Configuration GitHub Pages</h3>
+            <p>Pour rendre votre portfolio accessible en ligne :</p>
             <ol>
-                <li>Remplacez "NOM-DU-FICHIER.pbix" dans le code par le nom exact de votre fichier</li>
-                <li>Cliquez sur "Commit changes" pour sauvegarder</li>
+                <li>Allez dans l'onglet <strong>"Settings"</strong> de votre repository</li>
+                <li>Dans le menu de gauche, cliquez sur <strong>"Pages"</strong></li>
+                <li>Sous <strong>"Source"</strong>, sélectionnez la branche <strong>"main"</strong></li>
+                <li>Cliquez sur <strong>"Save"</strong></li>
+                <li>Votre site sera accessible à : <code>https://votrenomutilisateur.github.io/freelance/</code></li>
             </ol>
         </div>
     </main>
     
     <footer>
-        <p>© 2023 - Portfolio Freelance</p>
+        <p>© 2023 - Portfolio Freelance - Analyse Football</p>
         <a href="https://github.com/votre-username/freelance" class="github-link">
-            <i class="fab fa-github"></i> Voir sur GitHub
+            <i class="fab fa-github"></i> Voir le repository sur GitHub
         </a>
     </footer>
-
-    <script>
-        // Petit script pour aider à trouver où faire la modification
-        document.addEventListener('DOMContentLoaded', function() {
-            const link = document.querySelector('a[href="NOM-DU-FICHIER.pbix"]');
-            if (link) {
-                link.addEventListener('click', function() {
-                    alert('N\'oubliez pas de remplacer "NOM-DU-FICHIER.pbix" par le nom réel de votre fichier Power BI');
-                });
-            }
-        });
-    </script>
 </body>
 </html>
